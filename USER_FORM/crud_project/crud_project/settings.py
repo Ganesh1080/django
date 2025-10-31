@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-genz(1*e1_qa&%v&6^^(9t9k^sa^finwj4yd)$c6zd!0)3#n)3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://user-data-tab2.onrender.com","*"]
 
 
 # Application definition
