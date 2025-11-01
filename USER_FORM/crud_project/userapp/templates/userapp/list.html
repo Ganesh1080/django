@@ -31,7 +31,11 @@
                 <td>{{ user.email }}</td>
                 <td>{{ user.phone }}</td>
                 <td>
-                    <img src="{{ user.profile.url }}" width="70" height="70">
+                    {% if user.profile %}
+                         <img src="{{ user.profile.url }}" width="70" height="70">
+                    {% else %}
+                        <span>No Image</span>
+                    {% endif %}
                 </td>
                 <td>
                     <a href="{% url 'update' user.id %}" class="btn btn-warning btn-sm">Edit</a>
